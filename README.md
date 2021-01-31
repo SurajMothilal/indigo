@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# INDIGO PHOTO GALLERY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple image gallery
 
-## Available Scripts
+## REQUIREMENTS
 
-In the project directory, you can run:
+* Get the images from a data source. Fetch the sample JSON data from https://picsum.photos/v2/list (see https://picsum.photos/ for
+  general info)
+* Use this data and for each item display the image, author, dimensions (e.g., in the format “1000x500” if the width and height are 1000
+  and 500 respectively), and link to the image’s raw URL (download_url). Apply some minimal design/layout where it makes sense to
+  you.
+* When you click on an item then a pop-up should appear informing you that you're leaving the page. Include a way to hide the overlay
+  and cancel the action. Also include a way to disable this overlay entirely for all clicks, if the user wishes.
 
-### `yarn start`
+## APP OVERVIEW AND GENERAL APPROACH
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This app is primarily built using React JS version 17.0.1.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For the photo gallery, I opted to use the `react-photo-gallery` library which provides a nice, modern and responsive image gallery. For reference visit https://github.com/neptunian/react-photo-gallery
+For the toggle switch, I opted to use the `react-toggle` library which provides a simple toggle. For reference visit https://github.com/aaronshaf/react-toggle
+For the laoding spinner while the list is being fetched, I've used `react-loader-spinner`. For reference visit https://github.com/mhnpd/react-loader-spinner
 
-### `yarn test`
+The data source for this exercise is at `https://picsum.photos/v2/list` which returns a list of images
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## GETTING STARTED
 
-### `yarn build`
+Ensure you have npm installed ( version 12.16.3 )
+Run `npm install` to install packages at the root level
+Run `npm start`
+The app is exposed at `http://localhost:3000/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## THINGS TO IMPROVE AS NEXT STEPS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- I noticed the image text on the images are cramped when the images are too small in width. As next steps it will be nice to workout a better place/layout for the image text.
+- For images with a white background, the text on the image is hard to see.
+- Will need to handle the scenario of the endless spinner when the fetch does not resolve.
+- Add error handling
+- Add storybook
+- Add tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
