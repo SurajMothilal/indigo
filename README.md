@@ -14,20 +14,20 @@ A simple image gallery
 
 ## APP OVERVIEW AND GENERAL APPROACH
 
-This app is primarily built using React JS version 17.0.1.
+- This app is primarily built using React JS version 17.0.1.
 
-For the photo gallery, I opted to use the `react-photo-gallery` library which provides a nice, modern and responsive image gallery. For reference visit https://github.com/neptunian/react-photo-gallery
-For the toggle switch, I opted to use the `react-toggle` library which provides a simple toggle. For reference visit https://github.com/aaronshaf/react-toggle
-For the laoding spinner while the list is being fetched, I've used `react-loader-spinner`. For reference visit https://github.com/mhnpd/react-loader-spinner
+- For the photo gallery, I opted to use the `react-photo-gallery` library which provides a nice, modern and responsive image gallery. For reference visit https://github.com/neptunian/react-photo-gallery
+- For the toggle switch, I opted to use the `react-toggle` library which provides a simple toggle. For reference visit https://github.com/aaronshaf/react-toggle
+- For the laoding spinner while the list is being fetched, I've used `react-loader-spinner`. For reference visit https://github.com/mhnpd/react-loader-spinner
 
-The data source for this exercise is at `https://picsum.photos/v2/list` which returns a list of images
+- The data source for this exercise is at `https://picsum.photos/v2/list` which returns a list of images
 
 ## GETTING STARTED
 
-Ensure you have npm installed ( version 12.16.3 )
-Run `npm install` to install packages at the root level
-Run `npm start`
-The app is exposed at `http://localhost:3000/`
+- Ensure you have npm installed ( version 12.16.3 )
+- Run `npm install` to install packages at the root level
+- Run `npm start`
+- The app is exposed at `http://localhost:3000/`
 
 ## THINGS TO IMPROVE AS NEXT STEPS
 
