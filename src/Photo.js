@@ -35,7 +35,7 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left, key }) => 
           onClick={onClick ? handleClick : null}
         />
         <div style={authorStyle}>Author: {photo.author}</div>
-        <div style={dimensionStyle}>Dimensions: {photo.width} x {photo.height}</div>
+        <div style={dimensionStyle}>Dimensions: {Math.round(photo.width)} x {Math.round(photo.height)}</div>
         <div style={urlStyle}>URL: {photo.download_url}</div>
       </div>
     
